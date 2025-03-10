@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Attendance Management System</h1>
+    <div id="student-management">
+        <h2>Student Management</h2>
+        <form id="list-form">
+            <input type="text" id="list-name" placeholder="List Name" required>
+            <button type="submit">Create List</button>
+        </form>
+        <select id="student-lists">
+            <!-- Options for student lists will be populated here -->
+        </select>
+        <form id="student-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="class" placeholder="Class">
+            <input type="text" id="roll_number" placeholder="Roll Number">
+            <button type="submit">Add Student</button>
+        </form>
+        <ul id="student-list"></ul>
+        <button id="remove-student">Remove Student</button>
+        <button id="remove-student-list">Remove Student List</button>
+    </div>
+    <div id="attendance-module">
+        <h2>Attendance Module</h2>
+        <input type="date" id="attendance-date" required>
+        <ul id="attendance-list"></ul>
+        <button id="save-attendance">Save Attendance</button>
+    </div>
+    <div id="report-generation">
+        <h2>Report Generation</h2>
+        <button id="download-report">Download Report</button>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
